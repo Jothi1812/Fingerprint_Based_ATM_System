@@ -1,0 +1,50 @@
+/* Navbar Styles */
+.navbar {
+    display: block; /* Use block display */
+    background: linear-gradient(135deg, #4CAF50 0%, #FFEB3B 100%); /* Green to Yellow gradient */
+    padding: 20px; /* Add some padding */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    position: fixed; /* Keep the navbar fixed at the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it's above other elements */
+  }
+  
+  .navbar-title {
+    color: #ffffff; /* White color for text */
+    font-size: 2rem; /* Font size for the title */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+    margin: 0; /* Remove default margin */
+    padding-bottom: 10px; /* Add padding below title to separate it from links */
+  }
+  
+  .nav-links {
+    display: block; /* Stack links vertically */
+    margin-top: 10px; /* Space between title and links */
+  }
+  
+  .nav-link {
+    display: inline-block; /* Allow padding around links */
+    color: #ffffff; /* White color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1.2rem; /* Font size for the links */
+    padding: 10px 15px; /* Padding for clickable area */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s, color 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  .nav-link:hover {
+    background: rgba(255, 255, 255, 0.2); /* Light background on hover */
+    color: #FFEB3B; /* Change text color on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      text-align: center; /* Center align text on smaller screens */
+    }
+  
+    .nav-links {
+      text-align: center; /* Center align links on smaller screens */
+    }
+  }
+  

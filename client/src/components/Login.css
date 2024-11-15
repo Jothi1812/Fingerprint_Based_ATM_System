@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: linear-gradient(to right, #004d00, #99ff99); /* Gradient background */
+    font-family: 'Roboto', sans-serif; /* Clean font for modern look */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333; /* Dark text for better contrast */
+    opacity: 0; /* Start with an invisible body */
+    animation: fadeIn 0.5s forwards; /* Fade-in animation */
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1; /* Fully visible */
+    }
+  }
+  
+  .login-container {
+    width: 100%;
+    max-width: 400px; /* Limit max width for better alignment */
+    padding: 20px;
+  }
+  
+  .login-card {
+    background: white; /* White background for the login card */
+    padding: 30px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border: 1px solid #ccc; /* Light border */
+    transform: translateY(-20px); /* Start slightly above */
+    animation: slideDown 0.5s forwards; /* Slide down animation */
+  }
+  
+  @keyframes slideDown {
+    to {
+      transform: translateY(0); /* Move to original position */
+    }
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+    color: #004d00; /* Dark green for the title */
+    font-weight: 500; /* Medium weight */
+  }
+  
+  .input-group {
+    margin-bottom: 20px; /* Increased margin for better spacing */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Bold for better readability */
+    color: #555; /* Medium grey for labels */
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px; /* More padding for better input area */
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Rounded edges for inputs */
+    background: #f8f8f8; /* Light background for inputs */
+    transition: border-color 0.3s, background-color 0.3s; /* Smooth transition */
+  }
+  
+  input:focus {
+    border-color: #004d00; /* Green border on focus */
+    outline: none; /* Remove default outline */
+    background: #fff; /* Change background on focus */
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px; /* Rounded edges for button */
+    background-color: #004d00; /* Dark green button */
+    color: white;
+    font-size: 16px;
+    font-weight: bold; /* Bold text for emphasis */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+  }
+  
+  .login-button:hover {
+    background-color: #003300; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  
+  .message {
+    margin-top: 15px;
+    text-align: center; /* Center the message */
+    color: #ff5252; /* Red for error messages */
+    transition: opacity 0.3s; /* Smooth transition for messages */
+  }
+  

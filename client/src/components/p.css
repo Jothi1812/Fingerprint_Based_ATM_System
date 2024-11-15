@@ -1,0 +1,59 @@
+/* Upload Fingerprint Styles */
+.upload-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center align items */
+    justify-content: center; /* Center content vertically */
+    background: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    padding: 20px; /* Padding around the container */
+    width: 300px; /* Fixed width for the upload container */
+    margin: 20px auto; /* Center container with margin */
+  }
+  
+  .upload-container input[type="text"],
+  .upload-container input[type="file"] {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside inputs */
+    margin: 10px 0; /* Space between inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Slightly rounded corners */
+    font-size: 1rem; /* Font size for inputs */
+  }
+  
+  .upload-container input[type="text"]:focus,
+  .upload-container input[type="file"]:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  .upload-container button {
+    background-color: #4CAF50; /* Green background for button */
+    color: white; /* White text */
+    padding: 10px 15px; /* Padding for button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1rem; /* Font size for button */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .upload-container button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .upload-container {
+      width: 90%; /* Full width on smaller screens */
+      padding: 15px; /* Adjust padding */
+    }
+  
+    .upload-container input[type="text"],
+    .upload-container input[type="file"],
+    .upload-container button {
+      font-size: 0.9rem; /* Smaller font size for smaller screens */
+    }
+  }
+  
